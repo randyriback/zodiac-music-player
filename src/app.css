@@ -1,0 +1,259 @@
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.login {
+  left: 50%;
+  -webkit-transform: translate(-50%, -37.5%);
+  -moz-transform: translate(-5%, -37.5%);
+  transform: translate(-50%, -37.5%);
+  position: absolute;
+  padding-top: 555px;
+}
+
+.login a{
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+
+.login h3{
+  background-color: yellow;
+  color: black;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+}
+
+.loginContent {
+  position: relative;
+  opacity: 0.3;
+}
+.open{
+  position:absolute;
+  top:0;
+  right:0;
+  height: 80px;
+  padding-right: 15px;
+  padding-top: 10px;
+}
+
+.open img{
+  height: 70px;  
+  width: 220px;
+}
+.circle {
+  position: relative;
+  padding-top: 19.5em;
+  margin: 1em auto 0;
+  width: 32em;
+  height: 34em;
+  border-radius: 50%;
+}
+.circle img {
+  display: block;
+  position: absolute;
+  transition: transform 0.2s;
+  width: 4.8em;
+  height: 7em;
+  left: 45.5%;
+  margin: -1em;
+}
+
+.players {
+  position: fixed;
+  z-index: -1;
+  bottom: 0;
+  width: 100%;
+}
+.circle img:hover {
+  transform: scale(2.5);
+}
+.deg0 {
+  transform: translate(17em);
+}
+.deg30 {
+  transform: rotate(30deg) translate(17em) rotate(-30deg);
+}
+.deg60 {
+  transform: rotate(60deg) translate(17em) rotate(-60deg);
+}
+.deg90 {
+  transform: rotate(90deg) translate(17em) rotate(-90deg);
+}
+.deg120 {
+  transform: rotate(120deg) translate(17em) rotate(-120deg);
+}
+.deg150 {
+  transform: rotate(150deg) translate(17em) rotate(-150deg);
+}
+.deg180 {
+  transform: translate(-17em);
+}
+.deg210 {
+  transform: rotate(210deg) translate(17em) rotate(-210deg);
+}
+.deg240 {
+  transform: rotate(240deg) translate(17em) rotate(-240deg);
+}
+.deg270 {
+  transform: rotate(270deg) translate(17em) rotate(-270deg);
+}
+.deg300 {
+  transform: rotate(300deg) translate(17em) rotate(-300deg);
+}
+.deg330 {
+  transform: rotate(330deg) translate(17em) rotate(-330deg);
+}
+
+.loginContent {
+  pointer-events: none;
+}
+
+.hide{
+  display: none;
+}
+
+.center{
+  padding-bottom: 40px;
+}
+
+.root {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+
+
+@media (max-width: 767px) {
+  .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .login {
+    left: 50%;
+    -webkit-transform: translate(-50%, -37.5%);
+    -moz-transform: translate(-5%, -37.5%);
+    transform: translate(-50%, -37.5%);
+    position: absolute;
+    padding-top: 520px;
+  }
+
+  .loginContent {
+    position: relative;
+    opacity: 0.3;
+    
+  }
+
+
+  .login h3{
+    position: relative;
+    width: 100px;
+    height: 30px;
+  }
+
+  .login a{
+    position: absolute;
+    bottom: 1%;
+    right: 8%;
+    font-size: 35%;
+    
+  }
+  
+  .circle {
+    position: relative;
+    padding-top: 19.5em;
+    padding-left: 10em;
+    margin: 1em auto 0;
+    width: 16em;
+    height: 15em;
+    border-radius: 50%;
+  }
+  .circle img {
+    display: block;
+    position: absolute;
+    transition: transform 0.2s;
+    width: 2.1em;
+    height: 3.8em;
+    left: -35%;
+    margin: -1em;
+  }
+
+  .poop{
+    background-color: yellow;
+  }
+
+  .open{
+    position:absolute;
+    top:0;
+    right:0;
+    height: 80px;
+    padding-right: 15px;
+    padding-top: 10px;
+  }
+  
+  .open img{
+    height: 30px;  
+    width: 90px;
+  }
+  
+  .players {
+    position: fixed;
+    z-index: -1;
+    bottom: 0;
+    width: 100%;
+  }
+  .circle img:hover {
+    transform: scale(2.5);
+  }
+  .deg0 {
+    transform: translate(8em);
+  }
+  .deg30 {
+    transform: rotate(30deg) translate(8em) rotate(-30deg);
+  }
+  .deg60 {
+    transform: rotate(60deg) translate(8em) rotate(-60deg);
+  }
+  .deg90 {
+    transform: rotate(90deg) translate(8em) rotate(-90deg);
+  }
+  .deg120 {
+    transform: rotate(120deg) translate(8em) rotate(-120deg);
+  }
+  .deg150 {
+    transform: rotate(150deg) translate(8em) rotate(-150deg);
+  }
+  .deg180 {
+    transform: translate(-8em);
+  }
+  .deg210 {
+    transform: rotate(210deg) translate(8em) rotate(-210deg);
+  }
+  .deg240 {
+    transform: rotate(240deg) translate(8em) rotate(-240deg);
+  }
+  .deg270 {
+    transform: rotate(270deg) translate(8em) rotate(-270deg);
+  }
+  .deg300 {
+    transform: rotate(300deg) translate(8em) rotate(-300deg);
+  }
+  .deg330 {
+    transform: rotate(330deg) translate(8em) rotate(-330deg);
+  }
+  
+  .loginContent {
+    pointer-events: none;
+  }
+}
+
+
+
+
+
