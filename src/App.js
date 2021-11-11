@@ -13,7 +13,7 @@ function App() {
   code ? 
 <>
 <Burger />  
-<Sign foo={code}/>
+<Sign code={code}/>
 </>
  : <>
 <Burger />  
