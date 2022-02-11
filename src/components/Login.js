@@ -1,6 +1,10 @@
 import { Container } from "react-bootstrap";
 
-const AUTH_URL = 'https://accounts.spotify.com/authorize?client_id=cad88e9871c64b1097fd0794f17fa7a0&response_type=code&redirect_uri=https://zodiacmusicplayer.web.app&scope=streaming%20user-read-email%20user-read-private%20user-read-playback-state%20user-modify-playback-state'
+const redirect = window.location.origin
+
+console.log(redirect, "hello")
+
+const AUTH_URL = `https://accounts.spotify.com/authorize?client_id=cad88e9871c64b1097fd0794f17fa7a0&response_type=code&redirect_uri=${redirect}&scope=streaming%20user-read-email%20user-read-private%20user-read-playback-state%20user-modify-playback-state`
 
 const Login = () => {
 

@@ -2,13 +2,13 @@ import { useState, useEffect } from "react";
 import { Container } from "react-bootstrap";
 import SpotifyWebApi from "spotify-web-api-node";
 import SpotifyPlayer from "react-spotify-web-playback";
-import useAuth from "./useAuth";
+import useAuth from "../custom-hooks/useAuth";
 
 const spotifyApi = new SpotifyWebApi({
   clientId: "cad88e9871c64b1097fd0794f17fa7a0",
 });
 
-const Sign = ({ code }) => {
+const Signs = ({ code }) => {
   const accessToken = useAuth(code);
   const [playingTrack, setPlayingTrack] = useState();
   const [currentSign, setCurrentSign] = useState("");
@@ -118,4 +118,4 @@ const Sign = ({ code }) => {
   );
 };
 
-export default Sign;
+export default Signs;

@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 
+
 const useAuth = (code) => {
   const [accessToken, setAccessToken] = useState();
   const [refreshToken, setRefreshToken] = useState();
@@ -8,7 +9,7 @@ const useAuth = (code) => {
 
   useEffect(() => {
     axios
-      .post("https://zodiac-backend.herokuapp.com/login", {
+      .post(process.env.REACT_APP_BACKEND + "/login", {
         code,
       })
       .then((res) => {
@@ -26,7 +27,7 @@ const useAuth = (code) => {
     if (!refreshToken || !expiresIn) return;
     const interval = setInterval(() => {
       axios
-        .post("https://zodiac-backend.herokuapp.com/refresh", {
+        .post(process.env.REACT_APP_BACKEND + "/refresh", {
           refreshToken,
         })
         .then((res) => {

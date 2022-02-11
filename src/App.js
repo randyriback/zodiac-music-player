@@ -1,7 +1,7 @@
 import React from 'react'
-import Login from './login'
-import Sign from './sign'
-import Burger from './burger'
+import Login from './components/Login'
+import Signs from './components/Signs'
+import Burger from './components/Burger'
 import "bootstrap/dist/css/bootstrap.min.css"
 import "./app.css"
 const code = new URLSearchParams(window.location.search).get('code')
@@ -13,7 +13,7 @@ function App() {
   code ? 
 <>
 <Burger />  
-<Sign code={code}/>
+<Signs code={code}/>
 </>
  : <>
 <Burger />  
