@@ -17,12 +17,12 @@ I found this to be a good excuse to tinker with the [spotify-web-api-node](https
 
 4. In both directories, simply run `npm i` to install all necessary dependencies
 
-5. In *server.js* replace the `clientID` and `clientSecret` with [your own](https://developer.spotify.com/dashboard/) 
+5. Navigate to *server.js* within the the **server** directory and replace the `clientID` and `clientSecret` with [your own](https://developer.spotify.com/dashboard/) 
 
-5. Navigate to **spotify-server** and run `$ npm run devStart`
+5. While still in the  **server** directory, run `$ npm run devStart`
 
-6. Navigate to **spotify-frontend** and run `$ npm run start`
+6. Navigate to **client** and run `$ npm run start`
 
 ## Is this app currently deployed?
 
-Yes! The frontend is served with Firebase and the backend with Heroku [here](https://zodiacmusicplayer.web.app)
+Yes! The frontend is served with Firebase and the backend is served with Heroku. It can be found [here](https://zodiacmusicplayer.web.app)
