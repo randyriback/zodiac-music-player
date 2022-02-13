@@ -1,10 +1,4 @@
 
-.content {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
 .login {
   left: 50%;
   -webkit-transform: translate(-50%, -37.5%);

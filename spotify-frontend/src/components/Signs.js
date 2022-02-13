@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { Container } from "react-bootstrap";
 import SpotifyWebApi from "spotify-web-api-node";
 import SpotifyPlayer from "react-spotify-web-playback";
 import useAuth from "../custom-hooks/useAuth";
@@ -66,7 +65,7 @@ const Signs = ({ code }) => {
           const { img, id } = signs[sign];
 
           return (
-            <Container
+            <div
               key={id}
               className={"deg" + index * 30}
               style={{
@@ -79,7 +78,7 @@ const Signs = ({ code }) => {
                 onClick={signClick(id, sign)}
                 style={{ cursor: "pointer" }}
               />
-            </Container>
+            </div>
           );
         })}
       </div>
