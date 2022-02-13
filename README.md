@@ -1,6 +1,6 @@
 ## What is this?
 
-This is a home for 12 custom-made Spotify playlists based on artists' astrological signs that I'd curated. The photography and captions were done by Maurice Sarah in Melbourne, Australia.
+This is a home for 12 custom-made Spotify playlists based on artists' astrological signs that I've curated. The photography and captions were done by Maurice Sarah in Melbourne, Australia.
 
 ## Why is this?
 
@@ -17,11 +17,11 @@ I found this to be a good excuse to tinker with the [spotify-web-api-node](https
 
 4. In both directories, simply run `npm i` to install all necessary dependencies
 
-5. Navigate to *server.js* within the the **server** directory and replace the `clientID` and `clientSecret` with [your own](https://developer.spotify.com/dashboard/) 
-
-5. While still in the  **server** directory, run `$ npm run devStart`
+5. Navigate to **server**, run `$ npm run devStart`
 
 6. Navigate to **client** and run `$ npm run start`
+
+7. Navigate to *server.js* within the the **server** directory and replace the `clientID` and `clientSecret` with [your own](https://developer.spotify.com/dashboard/) in both the `app.post('/refresh')` and `app.post('/login')` routes
 
 ## Is this app currently deployed?
 
