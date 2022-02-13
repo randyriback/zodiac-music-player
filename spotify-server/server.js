@@ -1,5 +1,5 @@
 require('dotenv').config()
-const port = 3001
+const port = process.env.PORT || 3001
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
@@ -13,7 +13,7 @@ app.use(bodyParser.json())
 app.post('/refresh', (req, res) => {
     const refreshToken = req.body.refresh_token;
     const spotifyApi = new spotifyWebApi({
-       redirectUri: process.env.REDIRECT_URI,
+       redirectUri: process.env.REDIRECT_URI || "http://localhost:3000",
         clientId: process.env.CLIENT_ID,
         clientSecret: process.env.CLIENT_SECRET,
         refreshToken,
@@ -35,7 +35,7 @@ spotifyApi
 app.post('/login', (req, res) => {
     const code = req.body.code
     const spotifyApi = new spotifyWebApi({
-        redirectUri: process.env.REDIRECT_URI,
+        redirectUri: process.env.REDIRECT_URI || "http://localhost:3000",
         clientId: process.env.CLIENT_ID,
         clientSecret: process.env.CLIENT_SECRET,
 

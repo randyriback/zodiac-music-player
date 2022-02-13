@@ -9,13 +9,19 @@ I found this to be a good excuse to tinker with the [spotify-web-api-node](https
 
 ## How to use:
 
-1. Clone this repository
+1. Create a new Spotify API integration [here](https://developer.spotify.com/dashboard/)
 
-2. In both directories, simply run `npm i` to install all necessary dependencies
+2. Once you've created an App with Spotify, select "Edit Settings" and add "http://localhost:3000" as the Redirect URI 
 
-3. Navigate to **spotify-server** and run `npm run devStart`
+3. Once completed, clone this repository
 
-4. Navigate to **spotify-frontend** and run `npm run start`
+4. In both directories, simply run `npm i` to install all necessary dependencies
+
+5. In *server.js* replace the `clientID` and `clientSecret` with [your own](https://developer.spotify.com/dashboard/) 
+
+5. Navigate to **spotify-server** and run `$ npm run devStart`
+
+6. Navigate to **spotify-frontend** and run `$ npm run start`
 
 ## Is this app currently deployed?
 
