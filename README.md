@@ -17,3 +17,6 @@ I found this to be a good excuse to tinker with the [spotify-web-api-node](https
 
 4. Navigate to **spotify-frontend** and run `npm run start`
 
+## Is this app currently deployed?
+
+Yes! The frontend is served with Firebase and the backend with Heroku [here](https://zodiacmusicplayer.web.app)
