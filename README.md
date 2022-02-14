@@ -2,9 +2,9 @@
 
 This is a home for 12 custom-made Spotify playlists based on artists' astrological signs that I've curated. The photography and captions were done by Maurice Sarah in Melbourne, Australia.
 
-## Why'd you build this?
+## Why build this?
 
-I found this to be a good excuse to tinker with the [spotify-web-api-node](https://www.npmjs.com/package/spotify-web-api-node), a wrapper for the Spotify Web API, and well as [react-spotify-web-playback](https://www.npmjs.com/package/react-spotify-web-playback), a React component built with Spotify's Web Playback SDK. I also wanted to a way to showcase this archival music project.
+I ultimately wanted to a way to showcase this archival music project that I had in mind, and also found it to be a good excuse to tinker with the [spotify-web-api-node](https://www.npmjs.com/package/spotify-web-api-node), a wrapper for the Spotify Web API, as well as [react-spotify-web-playback](https://www.npmjs.com/package/react-spotify-web-playback), a React component built with Spotify's Web Playback SDK. 
 
 
 ## How to use:
