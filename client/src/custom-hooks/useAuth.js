@@ -7,9 +7,11 @@ const useAuth = (code) => {
   const [refreshToken, setRefreshToken] = useState();
   const [expiresIn, setExpiresIn] = useState();
 
+  const backend = process.env.REACT_APP_BACKEND || "http://localhost:3001"
+
   useEffect(() => {
     axios
-      .post(process.env.REACT_APP_BACKEND + "/login", {
+      .post(backend + "/login", {
         code,
       })
       .then((res) => {
@@ -21,13 +23,13 @@ const useAuth = (code) => {
       .catch(() => {
         window.location = "/";
       });
-  }, [code]);
+  }, [code, backend]);
 
   useEffect(() => {
     if (!refreshToken || !expiresIn) return;
     const interval = setInterval(() => {
       axios
-        .post(process.env.REACT_APP_BACKEND + "/refresh", {
+        .post(backend + "/refresh", {
           refreshToken,
         })
         .then((res) => {
@@ -40,7 +42,7 @@ const useAuth = (code) => {
     }, (expiresIn - 60) * 1000)
 
     return () => clearInterval(interval)
-  }, [refreshToken, expiresIn]);
+  }, [refreshToken, expiresIn, backend]);
 
   return accessToken;
 };
